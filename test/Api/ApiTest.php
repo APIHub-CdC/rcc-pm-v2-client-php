@@ -51,6 +51,8 @@ class ApiTest extends TestCase {
         $config = new Configuration();
         $config->setHost($apiUrl);
 
+        $this->apiInstance = new Instance($client, $config);
+
     }     
     
     public function testGetReporteCreditoPMV2()
